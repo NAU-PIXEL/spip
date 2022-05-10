@@ -26,16 +26,20 @@ pip3 install .
 # Package importation
 import spip
 import numpy as np
+
 # Genaration of a longitude/latitude grid to project the footprint
-lon_array, lat_array = np.arange(0, 360.5, 0.5), np.arange(-90, 90.5, 0.5)
+lon_array = np.arange(0, 360.5, 0.5)
+lat_array = np.arange(-90, 90.5, 0.5)
 lon_grid, lat_grid = np.meshgrid(lon_array, lat_array)
+
 # Pixel parameters
-lon_px, lat_px =                    # Longitude/Latitude of the pixel center [deg]
-emer =                              # Emergence angle of the pixel on the surface [deg]
-lon_subsc, lat_subsc =              # Longitude/Latitude sub-spacecraft [deg]
-d_Mars_sc =                         # Distance surface-spacraft [km]
+lon_px, lat_px = 58.2, 79.3         # Longitude/Latitude of the pixel center [deg]
+emer = 61.7                         # Emergence angle of the pixel on the surface [deg]
+lon_subsc, lat_subsc = 28.0, 24.9   # Longitude/Latitude sub-spacecraft [deg]
+d_Mars_sc = 27212                   # Distance surface-spacraft [km]
 Rmars = spip.emm_emirs.Rmars        # 3390 [km]
 ifov = spip.emm_emirs.ifov_emirs    # 2.7e-3 [rad]
+
 # Generation of the mask map of the pixel footprint
 #-- EMM/EMIRS spacecraft
 mask_footprint = spip.emm_emirs.emirs_ifov_px_projection(
@@ -52,7 +56,7 @@ mask_footprint = spip.emm_emirs.emirs_ifov_px_projection(
     )
 
 #-- General case, cirular pixel
-a, b, θ = spip.circalar_pixels.params_ellipse_fov(
+a, b, θ = spip.circular_pixels.params_ellipse_fov(
     lon_px,
     lat_px,
     emer,
@@ -62,7 +66,7 @@ a, b, θ = spip.circalar_pixels.params_ellipse_fov(
     ifov
     )
 
-mask_footprint = spip.circalar_pixels.in_ellipse_spherical(
+mask_footprint = spip.circular_pixels.in_ellipse_spherical(
     lon_grid,
     lat_grid,
     Rmars,
