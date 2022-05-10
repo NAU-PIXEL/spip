@@ -1,0 +1,5 @@
+instruments:
+    emm-emirs:
+        full name: EMM/EMIRS
+        ifov: 2.7e-3 rad
+        reference: Edwards et al. (2021)

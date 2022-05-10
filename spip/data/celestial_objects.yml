@@ -1,0 +1,4 @@
+planets:
+    mars:
+        full name: Mars
+        radius: 3390 km
