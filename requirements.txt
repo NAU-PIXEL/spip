@@ -1,3 +1,4 @@
 astropy>=5
 numpy>=1.20
 PyYAML>=6
+tqdm>=4
