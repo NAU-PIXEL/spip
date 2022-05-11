@@ -1,4 +1,4 @@
-![version](https://img.shields.io/badge/version-1.0-blue)
+![version](https://img.shields.io/badge/version-1.1-blue)
 ![pythonversion](https://img.shields.io/badge/Python-3.8+-blue)
 
 # SPiP : Surface Pixel footprint Projection
@@ -28,8 +28,8 @@ import spip
 import numpy as np
 
 # Genaration of a longitude/latitude grid to project the footprint
-lon_array = np.arange(0, 360.5, 0.5)
-lat_array = np.arange(-90, 90.5, 0.5)
+lon_array = np.arange(0.25, 360, 0.5)   # 0° -> 360°, 2 points per degree
+lat_array = np.arange(-89.75, 90, 0.5)  # -90° -> 90°, 2 points per degree
 lon_grid, lat_grid = np.meshgrid(lon_array, lat_array)
 
 # Pixel parameters
