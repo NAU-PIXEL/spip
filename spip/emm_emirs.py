@@ -13,6 +13,7 @@
 ## Packages
 # Global
 import astropy.units as u
+import numpy as np
 from copy import deepcopy
 import os
 import yaml
