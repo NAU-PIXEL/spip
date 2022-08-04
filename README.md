@@ -1,4 +1,4 @@
-![version](https://img.shields.io/badge/version-1.1-blue)
+![version](https://img.shields.io/badge/version-1.1.1-blue)
 ![pythonversion](https://img.shields.io/badge/Python-3.8+-blue)
 
 # SPiP : Surface Pixel footprint Projection
