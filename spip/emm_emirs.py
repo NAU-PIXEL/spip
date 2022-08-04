@@ -3,7 +3,7 @@
 
 ## emm_emirs.py
 ## Created by Aurélien STCHERBININE
-## Last modified by Aurélien STCHERBININE : 11/05/2022
+## Last modified by Aurélien STCHERBININE : 04/08/2022
 
 ##----------------------------------------------------------------------------------------
 """Projection of an EMM/EMIRS pixel fov on Mars.
@@ -168,7 +168,7 @@ def emirs_ifov_multi_px_projection(lon_grid, lat_grid, lon, lat, data, emer,
         emer_i, d_Mars_sc_i = emer[i], d_Mars_sc[i]
         ignore = (
             np.isnan(longi) or np.isnan(lati)                       # Test coords
-            or np.isnan(datai)                                      # Test values
+            or (datai is None) or np.isnan(datai)                   # Test values
             or (not negative_values and (datai < 0))                # Ignore negative values if specified
             or (not zero_values and (datai == 0))                   # Ignore null values if specified
                 )
