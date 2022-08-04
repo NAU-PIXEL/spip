@@ -36,7 +36,7 @@ lon_grid, lat_grid = np.meshgrid(lon_array, lat_array)
 lon_px, lat_px = 58.2, 79.3         # Longitude/Latitude of the pixel center [deg]
 emer = 61.7                         # Emergence angle of the pixel on the surface [deg]
 lon_subsc, lat_subsc = 28.0, 24.9   # Longitude/Latitude sub-spacecraft [deg]
-d_Mars_sc = 27212                   # Distance surface-spacraft [km]
+d_Mars_sc = 27212                   # Distance aeroid-spacraft [km]
 Rmars = spip.emm_emirs.Rmars        # 3390 [km]
 ifov = spip.emm_emirs.ifov_emirs    # 2.7e-3 [rad]
 
