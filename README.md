@@ -1,7 +1,7 @@
 ![version](https://img.shields.io/badge/version-1.1.1-blue)
 ![pythonversion](https://img.shields.io/badge/Python-3.8+-blue)
 
-# SPiP : Surface Pixel footprint Projection
+# SPiP : Spacecraft Pixel footprint Projection
 
 Projection of the pixel footprint from an instrument onboard an orbital spacecraft on a planetary surface.
 
