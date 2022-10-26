@@ -55,6 +55,8 @@ mask_footprint = spip.emm_emirs.emirs_ifov_px_projection(
     ifov
     )
 
+# To easily handle multiple pixels, there is the spip.emm_emirs.emirs_ifov_multi_px_projection() function.
+
 #-- General case, cirular pixel
 a, b, θ = spip.circular_pixels.params_ellipse_fov(
     lon_px,
