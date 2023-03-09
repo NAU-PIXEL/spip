@@ -1,5 +1,6 @@
 ![version](https://img.shields.io/badge/version-1.1.1-blue)
 ![pythonversion](https://img.shields.io/badge/Python-3.8+-blue)
+[![DOI](https://zenodo.org/badge/490546598.svg)](https://zenodo.org/badge/latestdoi/490546598)
 
 # SPiP : Spacecraft Pixel footprint Projection
 
