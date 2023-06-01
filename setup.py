@@ -11,7 +11,7 @@ package_data = {
 
 setuptools.setup(
     name='spip',
-    version='1.1.1',
+    version='1.1.2',
     author='Aurélien Stcherbinine',
     author_email='aurelien.stcherbinine@nau.edu',
     description='Spacecraft Pixel footprint Projection',
@@ -22,7 +22,7 @@ setuptools.setup(
     },
     packages=setuptools.find_packages(),
     package_data=package_data,
-    python_requires='>=3.8',
+    python_requires='>=3.6',
     setup_requires=['wheel'],
     install_requires=requirements,
     classifiers=[

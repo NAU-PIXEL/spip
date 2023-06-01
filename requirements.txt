@@ -1,4 +1,4 @@
-astropy>=5
-numpy>=1.20
+astropy>=4
+numpy>=1.19
 PyYAML>=6
 tqdm>=4
