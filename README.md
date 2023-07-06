@@ -86,9 +86,14 @@ mask_footprint = spip.circular_pixels.in_ellipse_spherical(
 #   | 0 -> Outside.
 ~~~
 
+## Documentation
+
+Planetary Data Workshop 2023: [abstract](https://github.com/NAU-PIXEL/spip/blob/main/docs/Stcherbinine_PDW2023_7008_spip.pdf) & [poster](https://github.com/NAU-PIXEL/spip/blob/main/docs/poster_PDW_SPiP_stcherbinine.pdf)
+
+
 ## Credits
 
-© Aurélien Stcherbinine (2022) NAU-PIXEL
+© Aurélien Stcherbinine (2023) NAU-PIXEL
 
 Department of Astronomy and Planetary Science, Northern Arizona University, Flagstaff, AZ, USA
 
