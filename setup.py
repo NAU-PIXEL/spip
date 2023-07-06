@@ -10,7 +10,7 @@ package_data = {
     }
 
 setuptools.setup(
-    name='spip',
+    name='planetary-spip',
     version='1.1.2',
     author='Aurélien Stcherbinine',
     author_email='aurelien.stcherbinine@nau.edu',
