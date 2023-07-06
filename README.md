@@ -7,6 +7,13 @@
 Projection of the pixel footprint from an instrument onboard an orbital spacecraft on a planetary surface.
 
 ## Installation & Update
+### Method 1: from PyPI (recommended)
+**Installation:** `pip3 install planetary-spip`
+
+**Update:** `pip3 install planetary-spip --upgrade` 
+
+
+### Method 2: from the GitHub repository (development version)
 **Installation:** Clone the repository and install with pip:
 
 ~~~bash
