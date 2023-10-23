@@ -1,4 +1,4 @@
-![version](https://img.shields.io/badge/version-1.1.2-blue)
+![version](https://img.shields.io/badge/version-1.1.3-blue)
 ![pythonversion](https://img.shields.io/badge/Python-3.6+-blue)
 [![DOI](https://zenodo.org/badge/490546598.svg)](https://zenodo.org/badge/latestdoi/490546598)
 
@@ -88,7 +88,7 @@ mask_footprint = spip.circular_pixels.in_ellipse_spherical(
 
 ## Credits
 
-© Aurélien Stcherbinine (2022) NAU-PIXEL
+© Aurélien Stcherbinine (2022–2023) NAU-PIXEL
 
 Department of Astronomy and Planetary Science, Northern Arizona University, Flagstaff, AZ, USA
 
