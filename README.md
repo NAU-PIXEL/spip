@@ -1,4 +1,4 @@
-![version](https://img.shields.io/badge/version-1.1.3-blue)
+![version](https://img.shields.io/badge/version-1.1.4-blue)
 ![pythonversion](https://img.shields.io/badge/Python-3.6+-blue)
 [![DOI](https://zenodo.org/badge/490546598.svg)](https://zenodo.org/badge/latestdoi/490546598)
 
@@ -7,6 +7,13 @@
 Projection of the pixel footprint from an instrument onboard an orbital spacecraft on a planetary surface.
 
 ## Installation & Update
+### Method 1: from PyPI (recommended)
+**Installation:** `pip3 install planetary-spip`
+
+**Update:** `pip3 install planetary-spip --upgrade` 
+
+
+### Method 2: from the GitHub repository (development version)
 **Installation:** Clone the repository and install with pip:
 
 ~~~bash
@@ -86,9 +93,14 @@ mask_footprint = spip.circular_pixels.in_ellipse_spherical(
 #   | 0 -> Outside.
 ~~~
 
+## Documentation
+
+Planetary Data Workshop 2023: [abstract](https://github.com/NAU-PIXEL/spip/blob/main/docs/Stcherbinine_PDW2023_7008_spip.pdf) & [poster](https://github.com/NAU-PIXEL/spip/blob/main/docs/poster_PDW_SPiP_stcherbinine.pdf)
+
+
 ## Credits
 
-© Aurélien Stcherbinine (2022–2023) NAU-PIXEL
+© Aurélien Stcherbinine (2023) NAU-PIXEL
 
 Department of Astronomy and Planetary Science, Northern Arizona University, Flagstaff, AZ, USA
 

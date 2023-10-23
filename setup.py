@@ -10,8 +10,8 @@ package_data = {
     }
 
 setuptools.setup(
-    name='spip',
-    version='1.1.3',
+    name='planetary-spip',
+    version='1.1.4',
     author='Aurélien Stcherbinine',
     author_email='aurelien.stcherbinine@nau.edu',
     description='Spacecraft Pixel footprint Projection',
