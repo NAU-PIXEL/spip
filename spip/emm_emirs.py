@@ -3,7 +3,7 @@
 
 ## emm_emirs.py
 ## Created by Aurélien STCHERBININE
-## Last modified by Aurélien STCHERBININE : 04/08/2022
+## Last modified by Aurélien STCHERBININE : 23/10/2023
 
 ##----------------------------------------------------------------------------------------
 """Projection of an EMM/EMIRS pixel fov on Mars.
@@ -182,10 +182,10 @@ def emirs_ifov_multi_px_projection(lon_grid, lat_grid, lon, lat, data, emer,
             data_grid += data_i
         elif method == 'max':
             mask_pixel_fov[mask_pixel_fov==0] = np.nan
-            data_grid = np.nanmax([grid_data, data_i], axis=0)
+            data_grid = np.nanmax([data_grid, data_i], axis=0)
         elif method == 'min':
             mask_pixel_fov[mask_pixel_fov==0] = np.nan
-            data_grid = np.nanmin([grid_data, data_i], axis=0)
+            data_grid = np.nanmin([data_grid, data_i], axis=0)
     data_grid[mask==0] = np.nan
     if method in ['avg', 'average', 'mean']:
         data_grid = data_grid / mask       # Normalisation
