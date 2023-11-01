@@ -3,7 +3,7 @@
 
 ## circular_pixels.py
 ## Created by Aurélien STCHERBININE
-## Last modified by Aurélien STCHERBININE : 09/05/2022
+## Last modified by Aurélien STCHERBININE : 01/11/2023
 
 ##----------------------------------------------------------------------------------------
 """Projection of circular pixels fov.
@@ -124,6 +124,12 @@ def params_ellipse_fov(lon_px, lat_px, emergence, lon_subsc, lat_subsc, d_Mars_s
             ( np.cos(dist_lon) - np.cos(dist_lat) * np.cos(dist_pts) )
             / ( np.sin(dist_lat) * np.sin(dist_pts) )
                 )
+    # Specific cases when α not defined in the triange
+    if Δlat == 0:
+        α = np.pi / 2
+    if dist_pts == 0:
+        α = 0
+    # Compute θ from α
     if (Δlon % 360) <= 180:
         if Δlat >= 0:
             θ = (np.pi / 2) - α
