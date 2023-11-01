@@ -11,7 +11,7 @@ package_data = {
 
 setuptools.setup(
     name='planetary-spip',
-    version='1.1.4',
+    version='1.2',
     author='Aurélien Stcherbinine',
     author_email='aurelien.stcherbinine@nau.edu',
     description='Spacecraft Pixel footprint Projection',
